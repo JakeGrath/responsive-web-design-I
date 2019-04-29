@@ -91,15 +91,50 @@ h1, h2, h3, h4, h5 {
     transition: top 0.3s;
 }
 
+
 #Show800 {
     display: none;
+}
+
+.services-header-img {
+    width: 874px;
+  }
+  
+  .navAlign {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .row-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 10px;
+  }
+
+  #Catchphrase {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-family: bangers;
+    font-style: italic;
+  }
+
+.extra-margin {
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 @media(max-width: 800px) {
     .navBarTop {
         margin: 36px 2% 0 2%;
         width: 720px;
-      }
+    }
     #navbar {
         background-color: rgba(255, 255, 255, 1);
         position: relative;
@@ -107,14 +142,11 @@ h1, h2, h3, h4, h5 {
         height: 45px;
         top: -10px;
         /* transition: top 0.3s; */
-      }
-    .services-header-img {
-        width: 400px;
-      }
+    }
     #CenterImage {
         width: 720px;
         padding: 10px 0 10px 0;
-      }
+    }
     #Hide800 {
         display: none;
     }
@@ -126,15 +158,62 @@ h1, h2, h3, h4, h5 {
     }
 }
 
-.services-header-img {
-  width: 874px;
+@media(max-width: 500px) {
+    .navBarTop {
+        margin: 36px 2% 0 2%;
+        width: 462px;
+      }
+    #navbar {
+        background-color: rgba(255, 255, 255, 1);
+        position: relative;
+        width: 462px;
+        height: 45px;
+
+        /* transition: top 0.3s; */
+    }
+    .services-header-img {
+        width: 400px;
+    }
+    #CenterImage {
+        width: 462px;
+        padding: 10px 0 10px 0;
+    }
+    #Hide800 {
+        display: none;
+    }
+    #Show800 {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 3%;
+    }
+    .row-content {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        justify-items: center;
+        padding: 3%;
+      }
+    .navAlign {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+      }
+    #Catchphrase {
+        margin-top: 28%;
+      }
+    #navbar-border {
+        border-top: 1px solid gray;
+        width: 100%;
+    }
+    
+    #navbar-border-bottom {
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        width: 100%;
+    }
 }
 
-.navAlign {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-}
 
 /* Image credit; https://pngtree.com/freebackground/iron-wall-seamless-texture-background-pattern-shading-website-banner_838273.html */
 
@@ -142,17 +221,6 @@ a {
   color: #383838;
   text-decoration: none;
   font-size: 20px;
-}
-
-#Catchphrase {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-  font-size: 50px;
-  font-family: bangers;
-  font-style: italic;
 }
 
 #GetStarted {
@@ -170,13 +238,6 @@ h2 {
 }
 
 
-.row-content {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  justify-items: center;
-  padding: 10px;
-}
 
 .image-separator {
   border-bottom: 1px solid black;
