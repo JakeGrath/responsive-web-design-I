@@ -74,18 +74,19 @@ h1, h2, h3, h4, h5 {
 
 .White {
   background: rgba(255, 255, 255, .8);
+  max-width: 874px;
 }
 
 
 .navBarTop {
         margin: 36px 10% 0 10%;
-        width: 874px;
+        max-width: 874px;
 }
 
 #navbar {
     background-color: rgba(255, 255, 255, .5);
     position: fixed; 
-    width: 874px;
+    max-width: 874px;
     height: 45px;
     top: -10px;
     transition: top 0.3s;
@@ -97,7 +98,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .services-header-img {
-    width: 874px;
+    max-width: 874px;
   }
   
   .navAlign {
@@ -133,18 +134,19 @@ h1, h2, h3, h4, h5 {
 @media(max-width: 800px) {
     .navBarTop {
         margin: 36px 2% 0 2%;
-        width: 720px;
+        max-width: 720px;
     }
     #navbar {
         background-color: rgba(255, 255, 255, 1);
         position: relative;
-        width: 720px;
+        max-width: 720px;
         height: 45px;
         top: -10px;
         /* transition: top 0.3s; */
     }
+
     #CenterImage {
-        width: 720px;
+        max-width: 720px;
         padding: 10px 0 10px 0;
     }
     #Hide800 {
@@ -156,26 +158,30 @@ h1, h2, h3, h4, h5 {
         justify-content: center;
         margin-bottom: 3%;
     }
+    .White {
+        background: rgba(255, 255, 255, .8);
+        max-width: 720px;
+      }
 }
 
 @media(max-width: 500px) {
     .navBarTop {
         margin: 36px 2% 0 2%;
-        width: 462px;
+        max-width: 462px;
       }
     #navbar {
         background-color: rgba(255, 255, 255, 1);
         position: relative;
-        width: 462px;
+        max-width: 462px;
         height: 45px;
 
         /* transition: top 0.3s; */
     }
     .services-header-img {
-        width: 400px;
+        max-width: 400px;
     }
     #CenterImage {
-        width: 462px;
+        max-width: 462px;
         padding: 10px 0 10px 0;
     }
     #Hide800 {
@@ -212,8 +218,16 @@ h1, h2, h3, h4, h5 {
         border-bottom: 1px solid gray;
         width: 100%;
     }
+    .White {
+        background: rgba(255, 255, 255, .8);
+        max-width: 462px;
+      }
 }
 
+.responsive {
+    width:100%;
+    height:auto;
+}
 
 /* Image credit; https://pngtree.com/freebackground/iron-wall-seamless-texture-background-pattern-shading-website-banner_838273.html */
 
